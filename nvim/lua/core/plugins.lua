@@ -21,7 +21,7 @@ local plugins = {
 
 	-- LSP Zero
 	{ 'VonHeikemen/lsp-zero.nvim',        branch = 'v3.x' },
-	{ 'neovim/nvim-lspconfig' },
+	{ 'neovim/nvim-lspconfig', opts = {autoformat = true} },
 	{ 'williamboman/mason.nvim' },
 	{ 'williamboman/mason-lspconfig.nvim' },
 

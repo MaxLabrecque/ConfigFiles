@@ -25,6 +25,8 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
     ['<C-Space>'] = cmp.mapping.complete()
 })
 
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
+
 
 lsp.set_preferences({
     sign_icons = {}
