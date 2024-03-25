@@ -60,6 +60,12 @@ local plugins = {
 
 	-- Color
 	{ "folke/tokyonight.nvim", lazy = false, priority = 0, opts = {} },
+
+	-- Macks_s TODO Finder
+	{
+		'MaxLabrecque/todofinder.nvim',
+		dependencies = { 'nvim-telescope/telescope.nvim' }
+	},
 }
 
 local opts = {
